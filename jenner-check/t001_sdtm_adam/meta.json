@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_sdtm_adam",
+  "source_file": "SDTM_ADAM_Project.sas",
+  "source_blob_sha": "762f80f89179c43db0f58f9e6090180a2e18d28b",
+  "source_commit": "3054cfbef8bf74923410de81dfbad7345706fdba",
+  "notes": "Full CRF->SDTM(DM)->XPT->ADaM(ADSL) pipeline. Original PROC IMPORT reads CRF_DM.xlsx from a SAS OnDemand home path; replaced with an inline DATA step carrying the workbook's six CRF_DM rows (STUDYID/SITEID/SUBJID/DOB/SEX/RACE/ETHNIC/COUNTRY/ICF_DATE). ODS PDF and XPORT libname paths rewritten to relative filenames. All downstream DATA-step derivations and PROC CONTENTS/PRINT/SQL/FREQ/MEANS logic unchanged; ETHNIC spaces->underscores for list-input datalines (column is carried, never parsed)."
+}

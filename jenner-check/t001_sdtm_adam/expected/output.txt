@@ -1,0 +1,51 @@
+
+PROC CONTENTS
+-------------------------------------------------------------------------------
+
+Data Set Name: sdtm
+Observations:  5
+Variables:     10
+
+Variables (in alphabetical order):
+
+  #  Variable  Type    Len  Format  Label
+---  --------  ----  -----  ------  -----
+  1  BRTHDTC   Char    200          
+  2  COUNTRY   Char     10          
+  3  DOMAIN    Char    200          
+  4  ETHNIC    Char     24          
+  5  RACE      Char     12          
+  6  RFICDTC   Char    200          
+  7  SEX       Char      1          
+  8  SITEID     Num      8          
+  9  STUDYID   Char      8          
+ 10  USUBJID   Char    200          
+
+-------------------------------------------------------------------------------
+
+
+  Obs  STUDYID  DOMAIN         USUBJID  SITEID     BRTHDTC     RFICDTC  SEX   RACE                  ETHNIC  COUNTRY
+-----  -------  ------  --------------  ------  ----------  ----------  ---  -----  ----------------------  -------
+    1  ABC101   DM      ABC101-001-001       1  1998-06-15  2024-01-10  F    ASIAN  NOT_HISPANIC_OR_LATINO  INDIA
+    2  ABC101   DM      ABC101-001-002       1  1995-09-22  2024-01-12  M    ASIAN  NOT_HISPANIC_OR_LATINO  INDIA
+    3  ABC101   DM      ABC101-002-001       2  1992-03-05  2024-01-14  F    ASIAN  NOT_HISPANIC_OR_LATINO  INDIA
+    4  ABC101   DM      ABC101-002-002       2  1990-11-18  2024-01-15  M    ASIAN  NOT_HISPANIC_OR_LATINO  INDIA
+    5  ABC101   DM      ABC101-003-001       3  1988-01-27  2024-01-16  F    ASIAN  NOT_HISPANIC_OR_LATINO  INDIA
+
+Total_Subjects
+--------------
+             5
+                                                   The FREQ Procedure
+
+                                 Cumulative    Cumulative
+SEX    Frequency    Percent     Frequency      Percent
+------------------------------------------------------------
+F              3     60.00            3        60.00
+M              2     40.00            5       100.00
+                                                  The MEANS Procedure
+
+ Variable           Mean        Minimum        Maximum
+ -----------------------------------------------------
+ AGE          31.4000000     26.0000000     36.0000000
+ -----------------------------------------------------
+
