@@ -1,0 +1,66 @@
+NOTE: Jenner v1.5.30 (build v1.5.30+unknown.20260714T061458Z.x86_64-unknown-linux-gnu)
+
+NOTE: Option OBS changed to 100.
+NOTE: DATA crf_dm
+
+NOTE: Processing inline DATALINES (5 lines)
+
+NOTE: Read 5 rows from DATALINES.
+NOTE: Wrote crf_dm (5 rows, 9 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA sdtm
+
+
+NOTE: Read 5 rows from crf_dm.
+NOTE: Wrote sdtm (5 rows, 10 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC CONTENTS data=sdtm
+
+NOTE: PROC CONTENTS completed: 5 observations, 10 variables
+NOTE: PROC PRINT data=sdtm
+
+NOTE: PROC PRINT completed: 5 observations printed, 10 variables
+NOTE: Member DM written to XPORT library XPOUT
+WARNING: LIBNAME XPOUT XPORT member 'dm' read failed: transport file not found: ./dm.xpt
+NOTE: DATA xpout.dm
+
+NOTE: Library XPOUT assigned path=dm.xpt.
+
+NOTE: Read 5 rows from sdtm.
+NOTE: Wrote xpout.dm (5 rows, 10 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA adsl
+
+
+NOTE: Read 5 rows from sdtm.
+NOTE: Wrote adsl (5 rows, 6 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SQL 
+
+NOTE: PROC SQL statement used.
+NOTE: PROC FREQ
+NOTE: ODS plot written: freq_sex.spec.json
+NOTE: PROC FREQ statement used.
+NOTE: PROC MEANS
+NOTE: PROC MEANS statement used.
+NOTE: Member DM2 written to XPORT library XPOUT
+WARNING: LIBNAME XPOUT XPORT member 'dm2' read failed: Parse error: member 'dm2' not found in XPT file ./dm.xpt (available: ["DM"])
+NOTE: DATA xpout.dm2
+
+NOTE: Library XPOUT assigned path=dm.xpt.
+
+NOTE: Read 5 rows from adsl.
+NOTE: Wrote xpout.dm2 (5 rows, 6 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: ODS PDF: rendering images at 150 DPI.
+NOTE: ODS PDF: wrote report to /tmp/work/r_33693385cdf24205a80918910298d58a/Clinical_output.pdf.
